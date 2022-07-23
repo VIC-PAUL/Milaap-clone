@@ -13,8 +13,6 @@ a {
   margin-top: -10px;
   background-color: white;
   padding-top: 5px;
-  position: fixed;
-  z-index: 10;
 }
 
 #navbar a {
@@ -26,6 +24,15 @@ a {
   transition: 0.5s ease;
 }
 
+#navbar .active {
+  background-color: #9c3353;
+}
+
+#navbar > #logAccnt {
+  margin-top: 10px;
+  margin-left: 160px;
+}
+
 #navbar > a:hover {
   padding: 0 15px 10px 15px;
   background-color: rgba(3, 155, 229, 0.05);
@@ -35,7 +42,7 @@ a {
   font-weight: 500;
 }
 
-#navbar > #contact {
+#navbar > #donate {
   background-color: #9c3353;
   padding: 0 15px 10px 15px;
   color: #ffc1d3;
@@ -51,7 +58,7 @@ a {
 
 #fundr {
   background-color: #9c3353;
-  margin-left: 500px;
+  margin-left: 220px;
   border: 0;
   font-size: 20px;
   border-radius: 25px;
@@ -61,8 +68,8 @@ a {
   font-weight: 400;
   padding: 7px 35px 9px 35px;
 }
-
 #fundr > a {
+  text-decoration: none;
   color: white;
 }
 #fundr:hover {
@@ -71,193 +78,129 @@ a {
 
 #topSec {
   display: flex;
-  padding-top: 150px;
-  padding-bottom: 90px;
+  padding-top: 90px;
+  padding-bottom: 40px;
   background-color: #9c3353;
+  color: white;
 }
 
 #topSec > div:nth-child(1) {
-  color: white;
-  width: 32%;
-  margin-left: 150px;
-  padding-top: 40px;
-  margin-right: 180px;
+  padding-top: 30px;
 }
 
-#topSec > div:nth-child(1) > h4 {
+#topSec > div:nth-child(2) > h1 {
   font-weight: 500;
-  font-size: 17px;
-  line-height: 25px;
 }
 
-#topSec > div:nth-child(1) > h1 {
-  font-weight: 500;
-  font-size: 32px;
+#topSec > div:nth-child(2) {
+  padding-left: 60px;
 }
-
-.mytabs {
+#topSec > div:nth-child(2) > div {
   display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 50px auto;
-  padding: 25px;
-}
-.mytabs input[type="radio"] {
-  display: none;
-}
-.mytabs label {
-  padding: 0px 125px 30px 125px;
-  background: transparent;
-  font-weight: 500;
-  font-size: 26px;
-  color: #5d5d5d;
-  border-bottom: 2.5px solid #9d9c9c;
+  border-bottom: 1px solid white;
+  width: 620px;
+  margin-top: -30px;
 }
 
-.mytabs .tab {
-  width: 100%;
-  padding: 20px;
-  background: #fff;
-  order: 1;
-  display: none;
+#topSec > div:nth-child(2) > div > img {
+  width: 15%;
+  height: 120px;
 }
-.mytabs .tab h2 {
-  font-size: 3em;
-}
-.mytabs > label > span {
-  color: transparent;
-}
-
-.tab > p > .material-icons {
-  font-size: 18px;
-  padding-right: 10px;
-}
-
-.tab > p > span {
-  color: #212121;
-}
-
-.tab > p + p {
-  color: #9c3353;
-  font-size: 19px;
-}
-.tab > p > a {
-  color: #9c3353;
-  text-decoration: underline;
-  font-size: 19px;
-}
-.tab > h3 {
+#topSec > div:nth-child(2) > div > h1 {
+  margin-left: 20px;
+  padding-top: 10px;
   font-weight: 500;
 }
 
-.mytabs > label > .material-icons {
-  font-size: 25px;
-  margin-right: 20px;
-}
-.mytabs input[type="radio"]:checked + label + .tab {
-  display: block;
-}
-
-.mytabs input[type="radio"]:checked + label {
-  background: #fff;
-  color: #9c3353;
-  border-bottom: 2.5px solid #9c3353;
-}
-
-.mytabs input[type="radio"]:checked + label > span {
-  color: #9c3353;
-}
-
-#social-links {
-  background-image: linear-gradient(106deg, #339c8e 56%, #86e1c4 100%);
-  color: white;
-  padding-left: 180px;
-  padding-top: 40px;
-}
-
-#social-links > h2 {
-  font-weight: 500;
-}
-#social-links > h4 {
-  font-weight: 500;
-}
-
-#social-links > button {
-  background-color: transparent;
-  font-weight: bold;
-  font-size: 15px;
-  border: 1px solid white;
-  margin-right: 5px;
-  margin-bottom: 70px;
-  padding-right: 15px;
-  border-radius: 8px;
-  padding-left: 50px;
-}
-#social-links > button > a {
-  color: white;
-  text-decoration: none;
-}
-
-#fb {
-  background: url(https://pages.milaap.org/wp-content/uploads/2022/02/facebook-icon.png);
-  background-repeat: no-repeat;
-}
-#tw {
-  background: url(https://pages.milaap.org/wp-content/uploads/2022/02/twitter-icon.png);
-  background-repeat: no-repeat;
-}
-#ins {
-  background: url(https://pages.milaap.org/wp-content/uploads/2022/02/instagram-icon.png);
-  background-repeat: no-repeat;
-}
-
-#yt {
-  background: url(https://pages.milaap.org/wp-content/uploads/2022/02/youtube-icon.png);
-  background-repeat: no-repeat;
-}
-
-#botm-sec {
-  margin-top: 50px;
-  margin-left: 180px;
-}
-#botm-sec > h2 {
-  font-weight: 500;
-  color: #464646;
-}
-#botm-sec > div > input {
-  border: 0px;
-  border-bottom: 1px solid rgb(176, 173, 173);
-  margin-right: 55px;
-  margin-top: 10px;
-  width: 35%;
-  padding-bottom: 25px;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-#botm-sec > #sugstn {
-  margin-top: 50px;
-  font-weight: 500;
-  font-size: 15px;
-  width: 82%;
-  padding-bottom: 150px;
-  padding-top: 15px;
-  padding-left: 20px;
-  border-radius: 8px;
-  border: 1px solid rgb(176, 173, 173);
-  vertical-align: text-top;
-}
-
-#botm-sec > div > button {
-  background-color: #9c3353;
-  border: 0;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 25px;
-  color: white;
-  margin-top: 30px;
+#topSec > div > #ids {
   font-weight: 400;
-  padding: 10px 110px 10px 110px;
+  width: 97%;
+  padding-bottom: 25px;
+  border-bottom: 1px solid white;
+}
+
+#topSec > div + div > #fundr1 {
+  background-color: white;
+  font-size: 19px;
+  font-weight: 400;
+  border-radius: 25px;
+  color: #9c3353;
+  margin-top: 10px;
+  margin-left: 0px;
+  padding: 10px 35px 12px 35px;
+}
+
+#lend {
+  padding-bottom: 500px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+  margin-left: 40px;
+  margin-top: 18px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #9c3353;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
+  padding-left: 12px;
+  padding-top: 1px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 28px;
+  left: 0px;
+  bottom: -3px;
+  background-color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+input:checked + .slider {
+  background-color: #9c3353;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #9c3353;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(45px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 #footer {
@@ -344,9 +287,11 @@ a {
   font-weight: 400;
   padding: 7px 35px 9px 35px;
 }
+
 #fundr1 > a {
   color: white;
 }
+
 #fundr1:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
 }
