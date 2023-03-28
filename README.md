@@ -1,7 +1,7 @@
 # Milaap-clone
 
 
-## Description
+## Description 
 A free crowdfunding online platform , created by using CSS Frameworks , JavaScript  and HTML with functionalities like full fledged fundraiser calculator, 
 accordion feature and crauser functionality.
 
